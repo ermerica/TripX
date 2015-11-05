@@ -2,6 +2,16 @@
 	
 	extract($_POST);
 	
+	$tripArray = array('origin' => $origin, 'destination' => $destination);
+	
+	$trip = new Trip($tripArray);
+	
+	//$trip = $trip->instantiate();
+	
+	echo '<p><pre>'.print_r($trip,true).'</pre></p>';
+	
+	$trip->save();
+	
 	$costPerMeal = ($mealGrade * BASE_MEAL) * $travelers;
 	$mealCostPerDay = $costPerMeal * 3;
 	

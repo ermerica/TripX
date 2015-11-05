@@ -4,6 +4,9 @@
 	//ini_set('display_errors', 1);
 	
 	require_once('config/data.php');
+	require_once('inc/database_mysqli.php');
+	require_once('inc/database_object.php');
+	require_once('inc/trip.php');
 	
 	//load template part
 	if(!function_exists('load_template')) {

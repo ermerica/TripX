@@ -1,4 +1,11 @@
-<?php	
+<?php
+	
+	
+	//DATABASE CONNECTION INFORMATION
+	
+	require_once 'cxn.php';
+	
+	
 	
 	//PROGRAM CONSTANTS
 	
